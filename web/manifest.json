@@ -1,6 +1,6 @@
 {
-    "name": "ecommerce_app_galarosa",
-    "short_name": "ecommerce_app_galarosa",
+    "name": "exercise",
+    "short_name": "exercise",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
