@@ -7,7 +7,8 @@ class AboutPage extends MyApp {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('About'),
+        title: Text('Fougere', style: TextStyle(fontWeight: FontWeight.bold)),
+        centerTitle: true,
         backgroundColor: Colors.black,
       ),
       drawer: MyDrawer(),

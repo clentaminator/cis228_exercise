@@ -8,7 +8,9 @@ class Cart extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Cart Items'),
+        title: const Text('Fougere',
+            style: TextStyle(fontWeight: FontWeight.bold)),
+        centerTitle: true,
         backgroundColor: Colors.black,
       ),
       drawer: const MyDrawer(),

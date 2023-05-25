@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:exercise/main.dart';
 import 'package:exercise/product_details.dart';
-
 import 'app_drawer.dart';
 
 class ProductList extends MyApp {
@@ -33,7 +32,9 @@ class ProductList extends MyApp {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Product List'),
+        title: const Text('Fougere',
+            style: TextStyle(fontWeight: FontWeight.bold)),
+        centerTitle: true,
         backgroundColor: Colors.black,
       ),
       drawer: const MyDrawer(), // use your Drawer class here

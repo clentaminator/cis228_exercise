@@ -1,7 +1,9 @@
+import 'package:exercise/account.dart';
 import 'package:flutter/material.dart';
 import 'package:exercise/about.dart';
 import 'package:exercise/cart.dart';
 import 'package:exercise/product_list.dart';
+import 'package:exercise/home.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({Key? key}) : super(key: key);
@@ -25,6 +27,16 @@ class MyDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
+            leading: const Icon(Icons.home),
+            title: const Text('Home'),
+            onTap: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => HomePage()),
+              );
+            },
+          ),
+          ListTile(
             leading: const Icon(Icons.checkroom),
             title: const Text('Products'),
             onTap: () {
@@ -41,6 +53,16 @@ class MyDrawer extends StatelessWidget {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (context) => Cart()),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.person),
+            title: const Text('Profile'),
+            onTap: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => ProfilePage()),
               );
             },
           ),
