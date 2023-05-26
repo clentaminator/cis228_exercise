@@ -10,7 +10,7 @@ class ProductDetails extends MyApp {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Fougere', style: TextStyle(fontWeight: FontWeight.bold)),
+        title: Text('FOUGERE', style: TextStyle(fontWeight: FontWeight.bold)),
         centerTitle: true,
         backgroundColor: Colors.black,
       ),
